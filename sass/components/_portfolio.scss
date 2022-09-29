@@ -1,0 +1,135 @@
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.radio-button {
+    font-family: inherit;
+    color: var(--headline-color);
+    background-color: var(--bcg-btn-cl);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border: 0;
+    cursor: pointer;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border-radius: 4px;
+    transition: background-color var(--animation), color var(--animation), box-shadow var(--animation);
+
+    &:hover,
+    &:focus {
+        color: var(--main-cl);
+            background-color: var(--button-color);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+
+.radio-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.box-item {
+    display: block;
+    transition: box-shadow var(--animation);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+
+.work-title {
+    color: var(--headline-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+
+.box-name {
+    text-align: left;
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.03em;
+}
+
+.border-item {
+    border: 1px solid #eeeeee;
+    border-top: none;
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+}
+
+.portfolio-container {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.thumb-text {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(101%);
+    padding: 63px 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+    transition: transform var(--animation);
+}
+
+.portfolio-item {
+
+    &:hover .thumb-text {
+    transform: translateY(0);
+    }
+}
+
+.thumb-text-p {
+    color: var(--main-cl);
+
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+}

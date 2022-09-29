@@ -1,0 +1,185 @@
+.footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.adress-footer {
+    margin-right: 75px;
+}
+
+.footer-logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.footer-logo-color {
+    color: var(--button-color);
+}
+
+.footer-logocolor {
+    color: var(--main-cl);
+}
+
+.address {
+    margin-top: 20px;
+}
+
+.adress-list {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+}
+
+.adress-list {
+
+    .adress-item {
+    margin-bottom: 9px;
+    }
+}
+
+.adress-list {
+
+    .adress-item:last-child {
+    margin: 0;
+    }
+}
+
+.footer-map-contact {
+    color: var(--main-cl);
+    transition: color var(--animation);
+    &:hover,
+    &:focus {
+        color: var(--button-color);
+    }
+}
+
+
+.footer-contact {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--animation);
+
+    &:hover,
+    &:focus {
+        color: var(--button-color);
+    }
+}
+
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon-footer {
+    fill: var(--main-cl);
+}
+
+.social-link-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff1a;
+    transition: background-color var(--animation);
+
+    &:hover,
+    &:focus {
+        background-color: var(--button-color);
+    }
+}
+
+.our-social-links {
+    margin-right: 93px;
+}
+
+.join-in {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--main-cl);
+    margin-bottom: 20px;
+}
+
+.tg-input {
+    margin-left: auto;
+}
+
+.footer-input {
+    margin-right: 12px;
+    color: #FFFFFF99;
+}
+
+.come-in {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-cl);
+    margin-bottom: 20px;
+}
+
+.footer-input {
+    width: 358px;
+    height: 50px;
+    background-color: #2f303a;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.form-field {
+
+    input::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+ }
+}
+
+.tg-btn {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    color: var(--main-cl);
+    background-color: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    text-align: start;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 28px;
+    cursor: pointer;
+    gap: 10px;
+}
+
+
+
+
+.tg-icon {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+}

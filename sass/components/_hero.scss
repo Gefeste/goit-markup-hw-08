@@ -1,0 +1,40 @@
+.hero-section {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.overlay {
+    background-color: var(--section-bg-cl);
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../images/bcgimg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.button-order {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    color: var(--main-cl);
+    background-color: var(--button-color);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    width: 216px;
+    height: 50px;
+    transition: background-color var(--animation);
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
+}

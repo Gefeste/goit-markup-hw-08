@@ -1,0 +1,34 @@
+
+.about__thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background-color: var(--bcg-btn-cl);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.about__list {
+    display: inline-flex;
+    gap: 30px;
+}
+
+.about__item {
+    width: 270px;
+}
+
+.about__title {
+    margin-bottom: 10px;
+    color: var(--headline-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.about__desc {
+    font-size: 14px;
+    line-height: 1.71;
+}

@@ -1,0 +1,46 @@
+.our-clients__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--headline-color);
+    margin-bottom: 50px;
+}
+
+.our-clients__list {
+    display: flex;
+    gap: 30px;
+}
+
+.our-clients__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: border-color var(--animation);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--button-color);
+    }
+}
+
+
+
+.our-clients__link,
+.our-clients__link {
+
+    &:hover .our-clients__logo,
+    &:focus .our-clients__logo {
+    fill: var(--button-color);
+    }
+}
+
+.our-clients__logo {
+    fill: #afb1b8;
+    transition: fill var(--animation);
+}
