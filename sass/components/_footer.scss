@@ -9,9 +9,9 @@
 .adress-footer {
   // margin-right: 75px;
 
-@media screen and (min-width:768px) and (max-width: 1199px) {
-  margin-right: 165px;
-}
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 165px;
+  }
 
   @media screen and (max-width: 1199px) {
     text-align: center;
@@ -42,7 +42,6 @@
 
 .address {
   margin-top: 20px;
-
 }
 
 .adress-list {
@@ -95,7 +94,6 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-
     text-align: center;
     margin-left: auto;
   }
@@ -137,10 +135,15 @@
   margin-bottom: 20px;
 }
 
+.tg-input-form {
+  width: 100%;
+}
+
 .tg-input {
   // margin-left: auto;
   @media screen and (max-width: 1199px) {
     text-align: center;
+    width: 100%;
   }
 }
 
@@ -169,9 +172,8 @@
   border-radius: 4px;
 
   @media screen and (max-width: 1199px) {
- 
     margin-bottom: 20px;
-    width: 450px;
+    width: 100%;
   }
 
   @media screen and (min-width: 1200px) {
@@ -179,7 +181,6 @@
     width: 358px;
   }
 }
-
 
 .form-field {
   input::placeholder {
@@ -190,6 +191,7 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
+  width: 100%;
 }
 
 .tg-btn {
@@ -229,6 +231,5 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     align-items: baseline;
-   
   }
 }
