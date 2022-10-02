@@ -5,14 +5,30 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    max-width: 768px;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+  }
 }
 
 .section {
+  @media screen and (max-width:1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
   padding-top: 94px;
   padding-bottom: 94px;
 }

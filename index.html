@@ -9,7 +9,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
-    />      
+    />
     <!-- normalize -->
     <link
       rel="stylesheet"
@@ -18,11 +18,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Шапка -->
-    <header>
+    <!-- <header>
       <div class="container header-container">
         <nav class="nav">
           <a href="./index.html" class="nav-link-logo"
@@ -59,15 +59,15 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <!-- Головна -->
     <main>
-      <section class="hero-section section">
+      <!-- <section class="hero-section section">
         <div class="container overlay">
           <h1>Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button-order" data-modal-open>Замовити послугу</button>
         </div>
-      </section>
+      </section> -->
       <!-- Ососбливості -->
       <section class="about section">
         <div class="container">
@@ -81,7 +81,9 @@
               </div>
 
               <h3 class="about__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="about__desc">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+              <p class="about__desc">
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+              </p>
             </li>
 
             <li class="about__item">
@@ -91,7 +93,9 @@
                 </svg>
               </div>
               <h3 class="about__title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="about__desc">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+              <p class="about__desc">
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+              </p>
             </li>
 
             <li class="about__item">
@@ -101,7 +105,9 @@
                 </svg>
               </div>
               <h3 class="about__title">ПЛАНУВАННЯ</h3>
-              <p class="about__desc">Так само консультація з широким активом значною мірою зумовлює.</p>
+              <p class="about__desc">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
             </li>
 
             <li class="about__item">
@@ -111,7 +117,9 @@
                 </svg>
               </div>
               <h3 class="about__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="about__desc">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+              <p class="about__desc">
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+              </p>
             </li>
           </ul>
         </div>
@@ -420,80 +428,83 @@
     <!-- Підвал -->
     <footer>
       <div class="container footer">
-        <div class="adress-footer">
-          <a href="./index.html" class="footer-logo"
-            ><span class="footer-logo-color">Web</span
-            ><span class="footer-logocolor">Studio</span></a
-          >
-          <address class="address">
-            <ul class="adress-list">
-              <li class="adress-item">
+        <div class="footer-tablet">
+          <div class="adress-footer">
+            <a href="./index.html" class="footer-logo"
+              ><span class="footer-logo-color">Web</span
+              ><span class="footer-logocolor">Studio</span></a
+            >
+            <address class="address">
+              <ul class="adress-list">
+                <li class="adress-item">
+                  <a
+                    href="https://goo.gl/maps/HY2AUErTmm1fDFxa6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer-map-contact"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="adress-item">
+                  <a href="mailto:info@devstudio.com" class="footer-contact">info@devstudio.com</a>
+                </li>
+                <li class="adress-item">
+                  <a href="tel:+380961111111" class="footer-contact">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="our-social-links">
+            <h2 class="join-in">Приєднуйтесь</h2>
+            <ul class="social-links">
+              <li class="social-item">
                 <a
-                  href="https://goo.gl/maps/HY2AUErTmm1fDFxa6"
+                  class="social-link-footer"
+                  href="https://instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="footer-map-contact"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+                  aria-label="Instagram"
+                  ><svg class="social-icon-footer" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use></svg
+                ></a>
               </li>
-              <li class="adress-item">
-                <a href="mailto:info@devstudio.com" class="footer-contact">info@devstudio.com</a>
+              <li class="social-item">
+                <a
+                  class="social-link-footer"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter"
+                  ><svg class="social-icon-footer" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use></svg
+                ></a>
               </li>
-              <li class="adress-item"><a href="tel:+380961111111" class="footer-contact">+38 096 111 11 11</a></li>
+              <li class="social-item">
+                <a
+                  class="social-link-footer"
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  ><svg class="social-icon-footer" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="social-item">
+                <a
+                  class="social-link-footer"
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  ><svg class="social-icon-footer" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
             </ul>
-          </address>
+          </div>
         </div>
-
-        <div class="our-social-links">
-          <h2 class="join-in">Приєднуйтесь</h2>
-          <ul class="social-links">
-            <li class="social-item">
-              <a
-                class="social-link-footer"
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                ><svg class="social-icon-footer" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-            <li class="social-item">
-              <a
-                class="social-link-footer"
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twitter"
-                ><svg class="social-icon-footer" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li class="social-item">
-              <a
-                class="social-link-footer"
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-                ><svg class="social-icon-footer" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="social-item">
-              <a
-                class="social-link-footer"
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                ><svg class="social-icon-footer" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
-        </div>
-
         <div class="tg-input">
           <strong class="come-in">Підпишіться на розсилку</strong>
           <div class="tg-input-form" role="group">
@@ -503,7 +514,7 @@
               </label>
 
               <button class="tg-btn" type="submit">
-                Підписатися 
+                Підписатися
 
                 <svg class="tg-icon" width="24" height="24">
                   <use href="./images/icons.svg#telegram"></use>
@@ -528,13 +539,7 @@
           <div class="modal-input" role="group">
             <label class="modal-label" for="name">
               <span class="modal-text-name">Ім'я</span>
-              <input
-                class="user-contact-input"
-                type="text"
-                name="name"
-                id="name"
-                required
-              />
+              <input class="user-contact-input" type="text" name="name" id="name" required />
               <svg class="modal-icon" width="18" height="18">
                 <use href="./images/icons.svg#person"></use>
               </svg>
@@ -542,13 +547,7 @@
 
             <label class="modal-label" for="tel">
               <span class="modal-text-name">Телефон</span>
-              <input
-                class="user-contact-input"
-                type="tel"
-                name="tel"
-                id="tel"
-                required
-              />
+              <input class="user-contact-input" type="tel" name="tel" id="tel" required />
               <svg class="modal-icon" width="18" height="18">
                 <use href="./images/icons.svg#phone-black"></use>
               </svg>
@@ -556,13 +555,7 @@
 
             <label class="modal-label" for="email">
               <span class="modal-text-name">Пошта</span>
-              <input
-                class="user-contact-input"
-                type="email"
-                name="email"
-                id="email"
-                required
-              />
+              <input class="user-contact-input" type="email" name="email" id="email" required />
               <svg class="modal-icon" width="18" height="18">
                 <use href="./images/icons.svg#email-black"></use>
               </svg>
