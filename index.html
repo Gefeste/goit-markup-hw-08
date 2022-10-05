@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- Шапка -->
-    <!-- <header>
+    <header>
       <div class="container header-container">
         <nav class="nav">
           <a href="./index.html" class="nav-link-logo"
@@ -42,7 +42,7 @@
         </nav>
         <ul class="header-group">
           <li>
-            <a class="contact" href="mailto:info@devstudio.com">
+            <a class="contact contact-mail" href="mailto:info@devstudio.com">
               <svg width="16" height="12">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
@@ -58,16 +58,26 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-open js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#open-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
     <!-- Головна -->
     <main>
-      <!-- <section class="hero-section section">
+      <section class="hero-section section">
         <div class="container overlay">
-          <h1>Ефективні рішення для вашого бізнесу</h1>
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button-order" data-modal-open>Замовити послугу</button>
         </div>
-      </section> -->
+      </section>
       <!-- Ососбливості -->
       <section class="about section">
         <div class="container">
@@ -132,7 +142,8 @@
             <li class="work__item">
               <div class="card-thumb">
                 <img
-                  src="./images/img1.jpg"
+                  srcset="./images/work/img1@1x.jpg 1x, ./images/work/img1@2x.jpg 2x"
+                  src="./images/work/img1@1x.jpg"
                   alt="людина набирає текст на клавіатурі"
                   width="370"
                   height="294"
@@ -142,14 +153,21 @@
             </li>
             <li class="work__item">
               <div class="card-thumb">
-                <img src="./images/img2.jpg" alt="тримає планшет в руці" width="370" height="294" />
+                <img
+                  srcset="./images/work/img2@1x.jpg 1x, ./images/work/img2@2x.jpg 2x"
+                  src="./images/work/img2@1x.jpg"
+                  alt="тримає планшет в руці"
+                  width="370"
+                  height="294"
+                />
                 <p class="card-thumb__text">Мобільні додатки</p>
               </div>
             </li>
             <li class="work__item">
               <div class="card-thumb">
                 <img
-                  src="./images/img3.jpg"
+                  srcset="./images/work/img3@1x.jpg 1x, ./images/work/img3@2x.jpg 2x"
+                  src="./images/work/img3@1x.jpg"
                   alt="тримає телефон в руці перед ноутбуком"
                   width="370"
                   height="294"
@@ -166,7 +184,11 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./images/img4.jpg" alt="Ігор Дем'яненко" width="270" height="260" />
+              <img
+                srcset="./images/team/img1-sm-@1x.jpg 1x, ./images/team/img1-sm-@2x.jpg 2x"
+                src="./images/team/img1-sm-@1x.jpg"
+                alt="Ігор Дем'яненко"
+              />
               <div class="team__our-teammate">
                 <h3 class="team__name-title">Ігор Дем'яненко</h3>
                 <p class="team__position">Product Designer</p>
@@ -219,7 +241,11 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img5.jpg" alt="Ольга Рєпіна" width="270" height="260" />
+              <img
+                srcset="./images/team/img2-sm-@1x.jpg 1x, ./images/team/img2-sm-@2x.jpg 2x"
+                src="./images/team/img2-sm-@1x.jpg"
+                alt="Ольга Рєпіна"
+              />
               <div class="team__our-teammate">
                 <h3 class="team__name-title">Ольга Рєпіна</h3>
                 <p class="team__position">Frontend Developer</p>
@@ -272,7 +298,11 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img6.jpg" alt="Микола Тарасов" width="270" height="260" />
+              <img
+                srcset="./images/team/img3-sm-@1x.jpg 1x, ./images/team/img3-sm-@2x.jpg 2x"
+                src="./images/team/img3-sm-@1x.jpg"
+                alt="Микола Тарасов"
+              />
               <div class="team__our-teammate">
                 <h3 class="team__name-title">Микола Тарасов</h3>
                 <p class="team__position">Marketing</p>
@@ -325,7 +355,11 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img7.jpg" alt="Михайло Єрмаков" width="270" height="260" />
+              <img
+                srcset="./images/team/img4-sm-@1x.jpg 1x, ./images/team/img4-sm-@2x.jpg 2x"
+                src="./images/team/img4-sm-@1x.jpg"
+                alt="Михайло Єрмаков"
+              />
               <div class="team__our-teammate">
                 <h3 class="team__name-title">Михайло Єрмаков</h3>
                 <p class="team__position">UI Designer</p>
@@ -563,12 +597,7 @@
 
             <label>
               <span class="modal-text-name">Коментар</span>
-              <textarea
-                class="textarea"
-                name="feedback"
-                rows="5"
-                placeholder="Введіть текст"
-              ></textarea>
+              <textarea class="textarea" name="feedback" placeholder="Введіть текст"></textarea>
             </label>
 
             <label for="checkbox" class="checkbox">
@@ -593,6 +622,42 @@
         </form>
       </div>
     </div>
-    <script src="./modal.js"></script>
+
+    <!-- mobile menu -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-close js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#close-menu"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-nav">
+        <li><a href="" class="link-navi">Студія</a></li>
+        <li><a href="" class="link-navi">Портфоліо</a></li>
+        <li><a href="" class="link-navi cont">Контакти</a></li>
+      </ul>
+      <ul class="mobile-menu-phone">
+        <li><a href="" class="link-phone">+38 096 111 11 11</a></li>
+        <li><a href="" class="link-mail">info@devstudio.com</a></li>
+      </ul>
+
+      <ul class="mobile-menu-links">
+        <li><a href="" class="link-social">Instagram</a></li>
+        <li><a href="" class="link-social">Twitter</a></li>
+        <li><a href="" class="link-social">Facebook</a></li>
+        <li><a href="" class="link-social-link">LinkedIn</a></li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,13 +1,20 @@
 .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-  // align-items: baseline;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .adress-footer {
-  // margin-right: 75px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 165px;
@@ -140,7 +147,10 @@
 }
 
 .tg-input {
-  // margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+
   @media screen and (max-width: 1199px) {
     text-align: center;
     width: 100%;
@@ -173,6 +183,7 @@
 
   @media screen and (max-width: 1199px) {
     margin-bottom: 20px;
+    max-width: 450px;
     width: 100%;
   }
 
@@ -228,6 +239,11 @@
 }
 
 .footer-tablet {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     align-items: baseline;

@@ -1,40 +1,122 @@
 .hero-section {
-    padding-bottom: 0;
-    padding-top: 0;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 .overlay {
-    background-color: var(--section-bg-cl);
+  background-color: var(--section-bg-cl);
+
+// Big
+
+  @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
 
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
-    background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../images/bcgimg.jpg);
+
+    background-image: linear-gradient(to right, #2f303a66, #2f303a66),
+      url(../images/bcg-img/large@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, #2f303a66, #2f303a66), url('../images/bcg-img/large@2x.jpg');
+    }
+  }
+
+// Medium
+
+  @media screen and (max-width: 1199px) {
+    max-height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+background-image: linear-gradient(to right, #2f303a66, #2f303a66),
+      url(../images/bcg-img/md@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, #2f303a66, #2f303a66), url('../images/bcg-img/md@2x.jpg');
+    }
+  }
+
+  // Small
+
+  @media screen and (max-width: 767px) {
+    
+
+    // max-width: 480px;
+    // max-height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+background-image: linear-gradient(to right, #2f303a66, #2f303a66),
+      url(../images/bcg-img/sm@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, #2f303a66, #2f303a66), url('../images/bcg-img/sm@2x.jpg');
+    }
+
+  }
+}
+
+.hero-title {
+  color: var(--main-cl);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 26px;
+    line-height: 1.62;
+    max-width: 360px;
+    width: 100%;
+  }
 }
 
 .button-order {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    color: var(--main-cl);
-    background-color: var(--button-color);
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    cursor: pointer;
-    border: none;
-    width: 216px;
-    height: 50px;
-    transition: background-color var(--animation);
-    &:hover,
-    &:focus {
-        background-color: #188ce8;
-    }
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  color: var(--main-cl);
+  background-color: var(--button-color);
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  width: 216px;
+  height: 50px;
+  transition: background-color var(--animation);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
