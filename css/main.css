@@ -314,6 +314,9 @@ footer {
   top: 10px;
   right: 15px;
 }
+.menu-close:hover, .menu-close:focus {
+  fill: var(--button-color);
+}
 
 .mobile-menu-nav {
   margin-bottom: auto;
@@ -1204,8 +1207,8 @@ footer {
 }
 @media screen and (max-width: 1199px) {
   .modal-window {
-    width: 450px;
-    height: 609px;
+    max-width: 450px;
+    max-height: 609px;
   }
 }
 
