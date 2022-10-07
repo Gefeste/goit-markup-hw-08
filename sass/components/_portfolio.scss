@@ -42,7 +42,6 @@
   margin-bottom: 50px;
 
   @media screen and (max-width: 767px) {
-    max-width: 360px;
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-left: 0;
@@ -93,7 +92,6 @@
   letter-spacing: 0.03em;
 }
 
-
 .border-item {
   border: 1px solid #eeeeee;
   border-top: none;
@@ -108,7 +106,7 @@
   padding-bottom: 94px;
   padding-top: 94px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     padding-top: 60px;
   }
 }
@@ -140,6 +138,9 @@
 
   @media screen and (max-width: 767px) {
     max-width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   @media screen and (min-width: 768px) {

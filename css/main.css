@@ -335,6 +335,10 @@ footer {
   color: var(--button-color);
 }
 
+.current-color {
+  color: var(--button-color);
+}
+
 .cont {
   margin-bottom: 0;
 }
@@ -541,6 +545,8 @@ footer {
 @media screen and (max-width: 767px) {
   .about__item {
     max-width: 450px;
+  }
+  .about__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -1043,6 +1049,7 @@ footer {
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
+  outline: none;
   color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1495,7 +1502,6 @@ textarea[placeholder] {
 }
 @media screen and (max-width: 767px) {
   .radio-buttons {
-    max-width: 360px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: start;
@@ -1572,7 +1578,7 @@ textarea[placeholder] {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .portfolio-container {
     padding-top: 60px;
   }
@@ -1614,6 +1620,9 @@ textarea[placeholder] {
 @media screen and (max-width: 767px) {
   .portfolio-item {
     max-width: 100%;
+  }
+  .portfolio-item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
